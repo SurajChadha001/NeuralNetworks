@@ -193,3 +193,5 @@ from nn.optimizer import RMSprop
 def _download_url(url: str, data_dir: str) -> str:
 
     file_name = os.path.basename(url)
+    file_path = os.path.join(data_dir, file_name)
+    
